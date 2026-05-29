@@ -11,12 +11,12 @@ This document lists public instances of WormHole that you can use. Instances are
 
 The official WormHole instance maintained by the core team:
 
-| URL                                                       | Status   | Notes            |
-| --------------------------------------------------------- | -------- | ---------------- |
-| [w0rmh0le-web.vercel.app](https://w0rmh0le-web.vercel.app)                    | Official | Primary instance |
-| [wormhole.samidy.com](https://wormhole.samidy.com)    | Official | Secondary mirror |
-| [lossless.wtf](https://lossless.wtf)                      | Official | Failover mirror  |
-| [if-it-runs-ship-it.lol](https://if-it-runs-ship-it.lol/) | Official | Failover mirror  |
+| URL                                                        | Status   | Notes            |
+| ---------------------------------------------------------- | -------- | ---------------- |
+| [w0rmh0le-web.vercel.app](https://w0rmh0le-web.vercel.app) | Official | Primary instance |
+| [wormhole.samidy.com](https://wormhole.samidy.com)         | Official | Secondary mirror |
+| [lossless.wtf](https://lossless.wtf)                       | Official | Failover mirror  |
+| [if-it-runs-ship-it.lol](https://if-it-runs-ship-it.lol/)  | Official | Failover mirror  |
 
 ---
 
@@ -34,17 +34,17 @@ These are available API endpoints that can be used with WormHole or other Hi-Fi 
 
 ### Official & Community APIs
 
-| Provider          | URL                                 | Notes                                                                                                  |
-| ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **WormHole**    | `https://wormhole-api.samidy.com` | Official API                                                                                           |
-|                   | `https://api.w0rmh0le-web.vercel.app`         | Official API                                                                                           |
-| **geeked.wtf**    | `https://hifi.geeked.wtf`           | Community hosted - uses the [TypeScript Rewrite](https://github.com/imbackwithrampage/hifi-api-workers) |
-| **Lucida (QQDL)** | `https://wolf.qqdl.site`            | Community hosted                                                                                       |
-|                   | `https://maus.qqdl.site`            | Community hosted                                                                                       |
-|                   | `https://vogel.qqdl.site`           | Community hosted                                                                                       |
-|                   | `https://katze.qqdl.site`           | Community hosted                                                                                       |
-|                   | `https://hund.qqdl.site`            | Community hosted                                                                                       |
-| **Kinoplus**      | `https://tidal.kinoplus.online`     | Community hosted - [Limited/No-Sub](https://rentry.co/limitedtidalaccs)                                |
+| Provider          | URL                                   | Notes                                                                                                   |
+| ----------------- | ------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| **WormHole**      | `https://wormhole-api.samidy.com`     | Official API                                                                                            |
+|                   | `https://api.w0rmh0le-web.vercel.app` | Official API                                                                                            |
+| **geeked.wtf**    | `https://hifi.geeked.wtf`             | Community hosted - uses the [TypeScript Rewrite](https://github.com/imbackwithrampage/hifi-api-workers) |
+| **Lucida (QQDL)** | `https://wolf.qqdl.site`              | Community hosted                                                                                        |
+|                   | `https://maus.qqdl.site`              | Community hosted                                                                                        |
+|                   | `https://vogel.qqdl.site`             | Community hosted                                                                                        |
+|                   | `https://katze.qqdl.site`             | Community hosted                                                                                        |
+|                   | `https://hund.qqdl.site`              | Community hosted                                                                                        |
+| **Kinoplus**      | `https://tidal.kinoplus.online`       | Community hosted - [Limited/No-Sub](https://rentry.co/limitedtidalaccs)                                 |
 
 ---
 

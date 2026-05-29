@@ -16,7 +16,7 @@ export class DownloadProgress implements WormHoleProgress {
     constructor(
         public readonly receivedBytes: number,
         public readonly totalBytes: number | undefined
-    ) { }
+    ) {}
 }
 
 export class SegmentedDownloadProgress extends DownloadProgress {
@@ -33,7 +33,7 @@ export class SegmentedDownloadProgress extends DownloadProgress {
 }
 
 export class ProgressMessage implements WormHoleProgressMessage {
-    constructor(public readonly message: string) { }
+    constructor(public readonly message: string) {}
 }
 
 export class DownloadProgressMessage extends ProgressMessage {

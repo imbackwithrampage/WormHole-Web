@@ -26,8 +26,8 @@ Visit `http://localhost:5173` (hot-reload enabled)
 
 Docker Compose [profiles](https://docs.docker.com/compose/how-tos/profiles/) control which services start. A service with no profile always runs. A service with a profile only runs when that profile is activated.
 
-| Command                                                   | What starts                          |
-| --------------------------------------------------------- | ------------------------------------ |
+| Command                                                   | What starts                        |
+| --------------------------------------------------------- | ---------------------------------- |
 | `docker compose up -d`                                    | WormHole                           |
 | `docker compose --profile pocketbase up -d`               | WormHole + PocketBase              |
 | `docker compose --profile dev up -d`                      | WormHole + Dev server              |

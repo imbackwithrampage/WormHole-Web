@@ -23,7 +23,7 @@ interface DashManifest {
 }
 
 export class DashDownloader {
-    constructor() { }
+    constructor() {}
 
     async getTotalSize(urls: string[], signal?: AbortSignal): Promise<number | undefined> {
         try {

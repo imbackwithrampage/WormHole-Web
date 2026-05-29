@@ -1,17 +1,17 @@
  <p align="center">
-  <a href="https://monochrome.tf">
-    <img src="https://github.com/monochrome-music/monochrome/blob/main/public/assets/512.png?raw=true" alt="Monochrome Logo" width="150px">
+  <a href="https://w0rmh0le-web.vercel.app">
+    <img src="https://github.com/imbackwithrampage/WormHole-Web/blob/main/public/assets/512.png?raw=true" alt="WormHole Logo" width="150px">
   </a>
 </p>
 
-<h1 align="center">Monochrome</h1>
+<h1 align="center">WormHole</h1>
 
 <p align="center">
   <strong>An open-source, privacy-respecting, ad-free music app.</strong>
 </p>
 
 <p align="center">
-  <a href="https://monochrome.tf">Website</a> -
+  <a href="https://w0rmh0le-web.vercel.app">Website</a> -
   <a href="https://ko-fi.com/monochrometf">Donate</a> -
   <a href="#features">Features</a> -
   <a href="#usage">Usage</a> -
@@ -20,26 +20,26 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/monochrome-music/monochrome/stargazers">
-    <img src="https://img.shields.io/github/stars/monochrome-music/monochrome?style=for-the-badge&color=ffffff&labelColor=000000" alt="GitHub stars">
+  <a href="https://github.com/imbackwithrampage/WormHole-Web/stargazers">
+    <img src="https://img.shields.io/github/stars/imbackwithrampage/WormHole-Web?style=for-the-badge&color=ffffff&labelColor=000000" alt="GitHub stars">
   </a>
-  <a href="https://github.com/monochrome-music/monochrome/forks">
-    <img src="https://img.shields.io/github/forks/monochrome-music/monochrome?style=for-the-badge&color=ffffff&labelColor=000000" alt="GitHub forks">
+  <a href="https://github.com/imbackwithrampage/WormHole-Web/forks">
+    <img src="https://img.shields.io/github/forks/imbackwithrampage/WormHole-Web?style=for-the-badge&color=ffffff&labelColor=000000" alt="GitHub forks">
   </a>
-  <a href="https://github.com/monochrome-music/monochrome/issues">
-    <img src="https://img.shields.io/github/issues/monochrome-music/monochrome?style=for-the-badge&color=ffffff&labelColor=000000" alt="GitHub issues">
+  <a href="https://github.com/imbackwithrampage/WormHole-Web/issues">
+    <img src="https://img.shields.io/github/issues/imbackwithrampage/WormHole-Web?style=for-the-badge&color=ffffff&labelColor=000000" alt="GitHub issues">
   </a>
 </p>
 
 ---
 
-## What is Monochrome?
+## What is WormHole?
 
-**Monochrome** is an open-source, privacy-respecting, ad-free [TIDAL](https://tidal.com) web UI, built on top of tidal API + Q-DL. It provides a beautiful, minimalist interface for streaming high-quality music without the clutter of traditional streaming platforms.
+**WormHole** is an open-source, privacy-respecting, ad-free [TIDAL](https://tidal.com) web UI, built on top of tidal API + Q-DL. It provides a beautiful, minimalist interface for streaming high-quality music without the clutter of traditional streaming platforms.
 
-[![Monochrome UI: NASIR by Nas](https://i.samidy.xyz/NASIR.png)](https://monochrome.tf/album/90502209)
+[![WormHole UI: NASIR by Nas](https://i.samidy.xyz/NASIR.png)](https://w0rmh0le-web.vercel.app/album/90502209)
 
-## [![Monochrome UI: Jump Out by Osamason](https://i.samidy.xyz/jumpout.png)](https://monochrome.tf/album/413189044)
+## [![WormHole UI: Jump Out by Osamason](https://i.samidy.xyz/jumpout.png)](https://w0rmh0le-web.vercel.app/album/413189044)
 
 ## Features
 
@@ -100,7 +100,7 @@
 
 Our Recommended way to use monochrome is through our official instance:
 
-**[monochrome.tf](https://monochrome.tf)** / **[monochrome.samidy.com](https://monochrome.samidy.com)**
+**[w0rmh0le-web.vercel.app](https://w0rmh0le-web.vercel.app)** / **[monochrome.samidy.com](https://monochrome.samidy.com)**
 
 For alternative instances, check [INSTANCES.md](INSTANCES.md).
 
@@ -115,7 +115,7 @@ We had to heavily customize the authentication system and write several custom s
 ### Option 1: Docker (Recommended)
 
 ```bash
-git clone https://github.com/monochrome-music/monochrome.git
+git clone https://github.com/imbackwithrampage/WormHole-Web.git
 cd monochrome/docker
 docker compose up -d
 ```
@@ -165,7 +165,7 @@ The current PocketBase collection schema is stored in [`database/pb_schema.json`
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/monochrome-music/monochrome.git
+    git clone https://github.com/imbackwithrampage/WormHole-Web.git
     cd monochrome
     ```
 
@@ -202,7 +202,7 @@ npm run build
 
 ### Basic Usage
 
-1. Visit the [Website](https://monochrome.tf) or your local development server
+1. Visit the [Website](https://w0rmh0le-web.vercel.app) or your local development server
 2. Search for your favorite artists, albums, or tracks
 3. Click play to start streaming
 4. Use the media controls to manage playback, queue, and volume
@@ -255,7 +255,7 @@ We welcome contributions from the community! Please see our [Contributing Guide]
 
 <p align="center">
   <a href="https://fmhy.net/audio#streaming-sites">
-    <img src="https://raw.githubusercontent.com/monochrome-music/monochrome/refs/heads/main/public/assets/asseenonfmhy880x310.png" alt="As seen on FMHY" height="50">
+    <img src="https://raw.githubusercontent.com/imbackwithrampage/WormHole-Web/refs/heads/main/public/assets/asseenonfmhy880x310.png" alt="As seen on FMHY" height="50">
   </a>
 </p>
 
@@ -266,15 +266,15 @@ We welcome contributions from the community! Please see our [Contributing Guide]
 </p>
 
 <p align="center">
-  Made with ❤️ by the Monochrome team
+  Made with ❤️ by the WormHole team
 </p>
 
 ## Star History
 
-<a href="https://www.star-history.com/#monochrome-music/monochrome&type=date&logscale&legend=top-left">
+<a href="https://www.star-history.com/#imbackwithrampage/WormHole-Web&type=date&logscale&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=monochrome-music/monochrome&type=date&theme=dark&logscale&legend=top-left" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=monochrome-music/monochrome&type=date&logscale&legend=top-left" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=monochrome-music/monochrome&type=date&logscale&legend=top-left" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=imbackwithrampage/WormHole-Web&type=date&theme=dark&logscale&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=imbackwithrampage/WormHole-Web&type=date&logscale&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=imbackwithrampage/WormHole-Web&type=date&logscale&legend=top-left" />
  </picture>
 </a>

@@ -86,10 +86,10 @@ export async function onRequest(context) {
 
             if (artist && artist.name && trackerData && trackerData.eras) {
                 const era = trackerData.eras[projectName];
-                const imageUrl = era && era.image ? era.image : 'https://monochrome.tf/assets/appicon.png';
+                const imageUrl = era && era.image ? era.image : 'https://w0rmh0le-web.vercel.app/assets/appicon.png';
                 const pageUrl = new URL(request.url).href;
                 const title = `${projectName} - ${artist.name}`;
-                const description = `Stream ${projectName} by ${artist.name} on Monochrome`;
+                const description = `Stream ${projectName} by ${artist.name} on WormHole`;
 
                 const metaHtml = `
                     <!DOCTYPE html>
@@ -100,7 +100,7 @@ export async function onRequest(context) {
                         <meta name="description" content="${description}">
                         <meta name="theme-color" content="#000000">
 
-                        <meta property="og:site_name" content="Monochrome">
+                        <meta property="og:site_name" content="WormHole">
                         <meta property="og:title" content="${title}">
                         <meta property="og:description" content="${description}">
                         <meta property="og:image" content="${imageUrl}">

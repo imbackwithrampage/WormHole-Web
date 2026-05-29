@@ -1140,7 +1140,7 @@ export class LosslessAPI {
         try {
             const searchUrl = `https://musicbrainz.org/ws/2/artist/?query=artist:${encodeURIComponent(artistName)}&fmt=json`;
             const searchRes = await fetch(searchUrl, {
-                headers: { 'User-Agent': 'Monochrome/2.0.0 ( https://github.com/monochrome-music/monochrome )' },
+                headers: { 'User-Agent': 'WormHole/2.0.0 ( https://github.com/imbackwithrampage/WormHole-Web )' },
             });
             const searchData = await searchRes.json();
 
@@ -1151,7 +1151,7 @@ export class LosslessAPI {
 
             const detailsUrl = `https://musicbrainz.org/ws/2/artist/${mbid}?inc=url-rels&fmt=json`;
             const detailsRes = await fetch(detailsUrl, {
-                headers: { 'User-Agent': 'Monochrome/2.0.0 ( https://github.com/monochrome-music/monochrome )' },
+                headers: { 'User-Agent': 'WormHole/2.0.0 ( https://github.com/imbackwithrampage/WormHole-Web )' },
             });
             const detailsData = await detailsRes.json();
 

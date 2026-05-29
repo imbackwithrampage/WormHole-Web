@@ -76,11 +76,11 @@ class ServerAPI {
 
         console.error('Failed to load instances from all uptime APIs');
         return [
-            'https://eu-central.monochrome.tf',
-            'https://us-west.monochrome.tf',
-            'https://arran.monochrome.tf',
+            'https://eu-central.w0rmh0le-web.vercel.app',
+            'https://us-west.w0rmh0le-web.vercel.app',
+            'https://arran.w0rmh0le-web.vercel.app',
             'https://triton.squid.wtf',
-            'https://api.monochrome.tf',
+            'https://api.w0rmh0le-web.vercel.app',
             'https://monochrome-api.samidy.com',
             'https://maus.qqdl.site',
             'https://vogel.qqdl.site',
@@ -154,7 +154,7 @@ export async function onRequest(context) {
         if (artist && (artist.name || artist.title)) {
             try {
                 const name = artist.name || artist.title;
-                const description = `Listen to ${name} on Monochrome`;
+                const description = `Listen to ${name} on WormHole`;
                 const imageUrl = artist.picture
                     ? api.getArtistPictureUrl(artist.picture, '750')
                     : 'https://monochrome.samidy.com/assets/appicon.png';
@@ -169,7 +169,7 @@ export async function onRequest(context) {
                         <meta name="description" content="${description}">
                         <meta name="theme-color" content="#000000">
 
-                        <meta property="og:site_name" content="Monochrome">
+                        <meta property="og:site_name" content="WormHole">
                         <meta property="og:title" content="${name}">
                         <meta property="og:description" content="${description}">
                         <meta property="og:image" content="${imageUrl}">

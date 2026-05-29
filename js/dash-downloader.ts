@@ -3,7 +3,7 @@ import { SegmentedDownloadProgress } from './progressEvents';
 import { getProxyUrl } from './proxy-utils';
 
 export interface DashDownloadOptions {
-    onProgress?: MonochromeProgressListener<SegmentedDownloadProgress>;
+    onProgress?: WormHoleProgressListener<SegmentedDownloadProgress>;
     signal?: AbortSignal;
     calculateDashBytes?: boolean;
 }
@@ -23,7 +23,7 @@ interface DashManifest {
 }
 
 export class DashDownloader {
-    constructor() {}
+    constructor() { }
 
     async getTotalSize(urls: string[], signal?: AbortSignal): Promise<number | undefined> {
         try {

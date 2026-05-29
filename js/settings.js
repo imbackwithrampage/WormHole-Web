@@ -6808,7 +6808,7 @@ export async function initializeSettings(scrobbler, player, api, ui) {
                         console.log('Could not clear IndexedDB stores:', dbError);
                         // Try to delete the entire database as fallback
                         try {
-                            const deleteRequest = indexedDB.deleteDatabase('MonochromeDB');
+                            const deleteRequest = indexedDB.deleteDatabase('WormHoleDB');
                             await new Promise((resolve, reject) => {
                                 deleteRequest.onsuccess = resolve;
                                 deleteRequest.onerror = reject;

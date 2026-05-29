@@ -16,18 +16,18 @@ jobs:
                 include:
                     - os: windows-latest
                       platform: windows
-                      binary_source: Monochrome-win_x64.exe
-                      binary_dest: Monochrome.exe
+                      binary_source: WormHole-win_x64.exe
+                      binary_dest: WormHole.exe
                       archive_name: monochrome-windows.zip
                     - os: ubuntu-latest
                       platform: linux
-                      binary_source: Monochrome-linux_x64
-                      binary_dest: Monochrome
+                      binary_source: WormHole-linux_x64
+                      binary_dest: WormHole
                       archive_name: monochrome-linux.zip
                     - os: macos-latest
                       platform: macos
-                      binary_source: Monochrome-mac_universal
-                      binary_dest: Monochrome
+                      binary_source: WormHole-mac_universal
+                      binary_dest: WormHole
                       archive_name: monochrome-mac.zip
 
         steps:
@@ -63,10 +63,10 @@ jobs:
             - name: Prepare Release Folder
               run: |
                   mkdir release
-                  cp dist/Monochrome/resources.neu release/
+                  cp dist/WormHole/resources.neu release/
                   cp neutralino.config.json release/
-                  cp -r dist/Monochrome/extensions release/
-                  cp dist/Monochrome/${{ matrix.binary_source }} release/${{ matrix.binary_dest }}
+                  cp -r dist/WormHole/extensions release/
+                  cp dist/WormHole/${{ matrix.binary_source }} release/${{ matrix.binary_dest }}
               shell: bash
 
             - name: Set Permissions (Linux/macOS)
@@ -118,6 +118,6 @@ jobs:
             - name: Upload Artifact (GH Internal)
               uses: actions/upload-artifact@v4
               with:
-                  name: Monochrome-${{ matrix.platform }}
+                  name: WormHole-${{ matrix.platform }}
                   path: release/
                   retention-days: 30

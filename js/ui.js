@@ -2894,7 +2894,7 @@ export class UIRenderer {
         container.innerHTML = `<div class="card-grid">${this.createSkeletonCards(12)}</div>`;
 
         try {
-            const response = await fetch('https://hot.monochrome.tf/');
+            const response = await fetch('https://hot.w0rmh0le-web.vercel.app/');
             if (!response.ok) throw new Error('Failed to load explore data');
             const data = await response.json();
 
@@ -3610,7 +3610,7 @@ export class UIRenderer {
         });
 
         try {
-            const response = await fetch(`https://hot.monochrome.tf/explore/genre/?id=${genreId}`);
+            const response = await fetch(`https://hot.w0rmh0le-web.vercel.app/explore/genre/?id=${genreId}`);
             if (!response.ok) throw new Error('Failed to load genre data');
             const data = await response.json();
 
@@ -5232,7 +5232,7 @@ export class UIRenderer {
                     numberOfTracks: playlistData.tracks ? playlistData.tracks.length : 0,
                     isUserPlaylist: true,
                 });
-                document.title = `${playlistData.name || playlistData.title} - Monochrome`;
+                document.title = `${playlistData.name || playlistData.title} - WormHole`;
 
                 // Setup playlist search
                 this.setupTracklistSearch();
@@ -7003,7 +7003,7 @@ export class UIRenderer {
             trendingContainer.innerHTML = createPlaceholder('Failed to load trending podcasts.');
         }
 
-        document.title = 'Podcasts - Monochrome Music';
+        document.title = 'Podcasts - WormHole Music';
     }
 
     cleanupPodcastState() {
@@ -7049,7 +7049,7 @@ export class UIRenderer {
                 this.podcastState.podcastTitle = 'Unknown Podcast';
             }
 
-            document.title = `${podcastResult?.title || 'Podcast'} - Monochrome Music`;
+            document.title = `${podcastResult?.title || 'Podcast'} - WormHole Music`;
 
             episodesContainer.innerHTML = '';
             await this.loadAllPodcastEpisodes();

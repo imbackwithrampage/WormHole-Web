@@ -77,9 +77,9 @@ export const apiSettings = {
                 this.defaultInstances = {
                     api: [
                         { url: 'https://hifi.geeked.wtf', version: '2.7' },
-                        { url: 'https://eu-central.monochrome.tf', version: '2.7' },
-                        { url: 'https://us-west.monochrome.tf', version: '2.7' },
-                        { url: 'https://api.monochrome.tf', version: '2.5' },
+                        { url: 'https://eu-central.w0rmh0le-web.vercel.app', version: '2.7' },
+                        { url: 'https://us-west.w0rmh0le-web.vercel.app', version: '2.7' },
+                        { url: 'https://api.w0rmh0le-web.vercel.app', version: '2.5' },
                         { url: 'https://monochrome-api.samidy.com', version: '2.3' },
                         { url: 'https://maus.qqdl.site', version: '2.6' },
                         { url: 'https://vogel.qqdl.site', version: '2.6' },
@@ -97,7 +97,7 @@ export const apiSettings = {
                         { url: 'https://wolf.qqdl.site', version: '2.6' },
                     ],
                     qobuz: [
-                        { url: 'https://qdl-api.monochrome.tf', version: '1.0' },
+                        { url: 'https://qdl-api.w0rmh0le-web.vercel.app', version: '1.0' },
                         { url: 'https://qobuz.kennyy.com.br', version: '1.0' },
                         { url: 'https://mono.scavengerfurs.net', version: '1.0' },
                     ],
@@ -130,7 +130,7 @@ export const apiSettings = {
 
             // Ensure default Qobuz instance is always available
             if (groupedInstances.qobuz.length === 0) {
-                groupedInstances.qobuz = [{ url: 'https://qdl-api.monochrome.tf', version: '1.0' }];
+                groupedInstances.qobuz = [{ url: 'https://qdl-api.w0rmh0le-web.vercel.app', version: '1.0' }];
             }
 
             this.defaultInstances = groupedInstances;

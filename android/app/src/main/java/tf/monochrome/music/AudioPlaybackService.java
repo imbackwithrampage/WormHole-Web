@@ -1,4 +1,4 @@
-package tf.monochrome.music;
+package com.wormhole.music;
 
 import android.app.Notification;
 import android.app.NotificationChannel;
@@ -93,7 +93,7 @@ public class AudioPlaybackService extends Service {
         );
 
         return new NotificationCompat.Builder(this, CHANNEL_ID)
-                .setContentTitle("Monochrome")
+                .setContentTitle("WormHole")
                 .setContentText("Playing audio")
                 .setSmallIcon(android.R.drawable.ic_media_play)
                 .setContentIntent(pendingIntent)

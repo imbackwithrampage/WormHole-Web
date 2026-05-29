@@ -8,8 +8,8 @@ const getBaseURL = () => {
     if (window.__AUTH_URL__) return window.__AUTH_URL__;
 
     const hostname = window.location.hostname;
-    if (hostname.endsWith('monochrome.tf') || hostname === 'monochrome.tf') {
-        return 'https://auth.monochrome.tf';
+    if (hostname.endsWith('w0rmh0le-web.vercel.app') || hostname === 'w0rmh0le-web.vercel.app') {
+        return 'https://auth.w0rmh0le-web.vercel.app';
     }
     return 'https://auth.samidy.com';
 };

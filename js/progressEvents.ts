@@ -1,22 +1,22 @@
 declare global {
-    type MonochromeProgress<T = object> = {
+    type WormHoleProgress<T = object> = {
         stage: string;
     } & T;
 
-    type MonochromeProgressMessage<_T = MonochromeProgress> = {
+    type WormHoleProgressMessage<_T = WormHoleProgress> = {
         message: string;
     };
 
-    type MonochromeProgressListener<T = MonochromeProgress> = (progress: T) => void;
+    type WormHoleProgressListener<T = WormHoleProgress> = (progress: T) => void;
 }
 
-export class DownloadProgress implements MonochromeProgress {
+export class DownloadProgress implements WormHoleProgress {
     public readonly stage = 'downloading';
 
     constructor(
         public readonly receivedBytes: number,
         public readonly totalBytes: number | undefined
-    ) {}
+    ) { }
 }
 
 export class SegmentedDownloadProgress extends DownloadProgress {
@@ -32,8 +32,8 @@ export class SegmentedDownloadProgress extends DownloadProgress {
     }
 }
 
-export class ProgressMessage implements MonochromeProgressMessage {
-    constructor(public readonly message: string) {}
+export class ProgressMessage implements WormHoleProgressMessage {
+    constructor(public readonly message: string) { }
 }
 
 export class DownloadProgressMessage extends ProgressMessage {

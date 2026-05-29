@@ -3,7 +3,7 @@ import { MusicDatabase } from '../db.js';
 
 describe('MusicDatabase', () => {
     let db;
-    const TEST_DB_NAME = 'TestMonochromeDB';
+    const TEST_DB_NAME = 'TestWormHoleDB';
 
     beforeEach(async () => {
         db = new MusicDatabase();

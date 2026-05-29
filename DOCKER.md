@@ -2,7 +2,7 @@
 
 ## Quick Start
 
-### Monochrome Only
+### WormHole Only
 
 ```bash
 docker compose up -d
@@ -28,10 +28,10 @@ Docker Compose [profiles](https://docs.docker.com/compose/how-tos/profiles/) con
 
 | Command                                                   | What starts                          |
 | --------------------------------------------------------- | ------------------------------------ |
-| `docker compose up -d`                                    | Monochrome                           |
-| `docker compose --profile pocketbase up -d`               | Monochrome + PocketBase              |
-| `docker compose --profile dev up -d`                      | Monochrome + Dev server              |
-| `docker compose --profile dev --profile pocketbase up -d` | Monochrome + Dev server + PocketBase |
+| `docker compose up -d`                                    | WormHole                           |
+| `docker compose --profile pocketbase up -d`               | WormHole + PocketBase              |
+| `docker compose --profile dev up -d`                      | WormHole + Dev server              |
+| `docker compose --profile dev --profile pocketbase up -d` | WormHole + Dev server + PocketBase |
 
 In `docker-compose.yml`, it looks like this:
 
@@ -98,7 +98,7 @@ The application is configured via environment variables. Copy `.env.example` to 
 
 ### Authentication (Appwrite)
 
-Monochrome uses Appwrite for user authentication. While it defaults to official instances, you can use your own self-hosted Appwrite instance:
+WormHole uses Appwrite for user authentication. While it defaults to official instances, you can use your own self-hosted Appwrite instance:
 
 1. Create a project in Appwrite.
 2. Enable the **Google** or **Email/Password** providers in the Appwrite Console.
@@ -108,7 +108,7 @@ Monochrome uses Appwrite for user authentication. While it defaults to official 
 
 ### Database (PocketBase)
 
-Monochrome uses PocketBase to store user data (playlists, favorites, profiles, etc.). You can run it alongside Monochrome using the `pocketbase` profile:
+WormHole uses PocketBase to store user data (playlists, favorites, profiles, etc.). You can run it alongside WormHole using the `pocketbase` profile:
 
 ```bash
 docker compose --profile pocketbase up -d

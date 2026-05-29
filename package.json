@@ -2,7 +2,7 @@
     "name": "monochrome",
     "type": "module",
     "version": "2.5.1",
-    "description": "[<img src=\"https://github.com/monochrome-music/monochrome/blob/main/assets/512.png?raw=true\" alt=\"Monochrome Logo\">](https://monochrome.tf)",
+    "description": "[<img src=\"https://github.com/imbackwithrampage/WormHole-Web/blob/main/assets/512.png?raw=true\" alt=\"WormHole Logo\">](https://w0rmh0le-web.vercel.app)",
     "scripts": {
         "dev": "vite",
         "test": "vitest run --config=vite.config.ts",
@@ -11,7 +11,7 @@
         "test:watch:headless": "HEADLESS=true vitest --config=vite.config.ts",
         "install:playwright": "playwright install chromium",
         "build": "vite build && vite-bundle-visualizer -o dist/assets/bundle-stats.html --open false",
-        "postbuild": "node -e \"const fs = require('fs'); const path = require('path'); const src = 'extensions'; const dest = path.join('dist', 'Monochrome', 'extensions'); if (fs.existsSync(src)) { fs.mkdirSync(dest, { recursive: true }); fs.cpSync(src, dest, { recursive: true }); console.log('Extensions manually copied to ' + dest); }\"",
+        "postbuild": "node -e \"const fs = require('fs'); const path = require('path'); const src = 'extensions'; const dest = path.join('dist', 'WormHole', 'extensions'); if (fs.existsSync(src)) { fs.mkdirSync(dest, { recursive: true }); fs.cpSync(src, dest, { recursive: true }); console.log('Extensions manually copied to ' + dest); }\"",
         "preview": "vite preview",
         "lint:js": "eslint .",
         "lint:css": "stylelint \"**/*.css\"",
@@ -23,7 +23,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/monochrome-music/monochrome.git"
+        "url": "git+https://github.com/imbackwithrampage/WormHole-Web.git"
     },
     "keywords": [
         "music"
@@ -31,9 +31,9 @@
     "author": "",
     "license": "Apache-2.0",
     "bugs": {
-        "url": "https://github.com/monochrome-music/monochrome/issues"
+        "url": "https://github.com/imbackwithrampage/WormHole-Web/issues"
     },
-    "homepage": "https://github.com/monochrome-music/monochrome#readme",
+    "homepage": "https://github.com/imbackwithrampage/WormHole-Web#readme",
     "devDependencies": {
         "@capacitor/assets": "^3.0.5",
         "@capacitor/cli": "^8.2.0",

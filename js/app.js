@@ -107,45 +107,20 @@ async function loadDownloadsModule() {
 
 async function fetchcontributors() {
     try {
-        const response = await fetch('https://api.samidy.com/api/contributors');
-        if (!response.ok) return;
-        const data1 = await response.json();
-        if (!Array.isArray(data1)) return;
-
-        let data = data1.filter(
-            (user) => user.type !== 'Bot' && user.login !== 'edidealt' && user.login !== 'satanyahoo'
-        );
-
-        const edideaur = data.find((user) => user.login === 'edideaur');
-        if (edideaur) {
-            edideaur.contributions += data1.find((u) => u.login === 'edidealt')?.contributions || 0;
-            edideaur.contributions += data1.find((u) => u.login === 'satanyahoo')?.contributions || 0;
-        }
-
-        data.sort((a, b) => b.contributions - a.contributions);
-
         const con = document.querySelector('.about-contributors');
         if (!con) return;
-
-        data.forEach((user) => {
-            const userDIV = document.createElement('div');
-            userDIV.innerHTML = `
-            <a href="${user.html_url}" target="_blank">
-            <img src="${user.avatar_url}&s=50" alt="${user.login}" width="50" height="50" style="border-radius: 50%;" loading="lazy">
-            <span>${user.login}</span>
-            <span class="contrib">Contributions: ${user.contributions}</span>
-            </a>
-            `;
-            con.appendChild(userDIV);
-        });
-    } catch (e) {
-        const con = document.querySelector('.about-contributors-failed');
-        if (!con) return;
+        con.innerHTML = '';
         const userDIV = document.createElement('div');
         userDIV.innerHTML = `
-        <h4 style="text-align: center; color: var(--muted-foreground);">Failed to Fetch Contributor List</h4>
+        <a href="https://github.com/imbackwithrampage" target="_blank">
+        <img src="https://github.com/imbackwithrampage.png" alt="imbackwithrampage" width="50" height="50" style="border-radius: 50%;" loading="lazy">
+        <span>imbackwithrampage</span>
+        <span class="contrib">Contributor</span>
+        </a>
         `;
         con.appendChild(userDIV);
+    } catch (e) {
+        console.error('Error rendering contributors:', e);
     }
 }
 
@@ -420,7 +395,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 
     if (import.meta.env.DEV) {
-        window.monochrome = {
+        window.wormhole = {
             HiFiClient,
             LyricsManager,
             MusicAPI,
@@ -599,7 +574,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     scanLocalMediaFolder().catch(console.error);
 
     const scrobbler = new MultiScrobbler();
-    window.monochromeScrobbler = scrobbler;
+    window.wormholeScrobbler = scrobbler;
 
     const lyricsManager = await LyricsManager.initialize(MusicAPI.instance);
     UIRenderer.instance.lyricsManager = lyricsManager;
@@ -2663,14 +2638,14 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Font Settings
     const fontSelect = document.getElementById('font-select');
     if (fontSelect) {
-        const savedFont = localStorage.getItem('monochrome-font');
+        const savedFont = localStorage.getItem('wormhole-font');
         if (savedFont) {
             fontSelect.value = savedFont;
         }
         fontSelect.addEventListener('change', (e) => {
             const font = e.target.value;
             document.documentElement.style.setProperty('--font-family', font);
-            localStorage.setItem('monochrome-font', font);
+            localStorage.setItem('wormhole-font', font);
         });
     }
 

@@ -1730,7 +1730,7 @@ export async function initializeSettings(scrobbler, player, api, ui) {
     }
 
     // Legacy EQ Custom Presets (Save / Delete)
-    const LEGACY_GEQ_CUSTOM_PRESETS_KEY = 'monochrome-legacy-geq-custom-presets';
+    const LEGACY_GEQ_CUSTOM_PRESETS_KEY = 'wormhole-legacy-geq-custom-presets';
     // Migrate from old key if present
     try {
         const oldData = localStorage.getItem('legacy-geq-custom-presets');
@@ -6568,7 +6568,7 @@ export async function initializeSettings(scrobbler, player, api, ui) {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `monochrome-library-${new Date().toISOString().split('T')[0]}.json`;
+        a.download = `wormhole-library-${new Date().toISOString().split('T')[0]}.json`;
         a.click();
         URL.revokeObjectURL(url);
     });
@@ -6602,7 +6602,7 @@ export async function initializeSettings(scrobbler, player, api, ui) {
         const settingsToExport = {};
         for (let i = 0; i < localStorage.length; i++) {
             const key = localStorage.key(i);
-            if (key && key.startsWith('monochrome-')) {
+            if (key && key.startsWith('wormhole-')) {
                 try {
                     settingsToExport[key] = JSON.parse(localStorage.getItem(key));
                 } catch {
@@ -6616,7 +6616,7 @@ export async function initializeSettings(scrobbler, player, api, ui) {
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `monochrome-settings-${new Date().toISOString().split('T')[0]}.json`;
+        a.download = `wormhole-settings-${new Date().toISOString().split('T')[0]}.json`;
         a.click();
         URL.revokeObjectURL(url);
     });
@@ -6636,7 +6636,7 @@ export async function initializeSettings(scrobbler, player, api, ui) {
             try {
                 const settingsToImport = JSON.parse(event.target.result);
                 for (const [key, value] of Object.entries(settingsToImport)) {
-                    if (key.startsWith('monochrome-')) {
+                    if (key.startsWith('wormhole-')) {
                         localStorage.setItem(key, typeof value === 'string' ? value : JSON.stringify(value));
                     }
                 }
@@ -6677,9 +6677,9 @@ export async function initializeSettings(scrobbler, player, api, ui) {
         }
 
         customDbBtn.addEventListener('click', () => {
-            const pbUrl = localStorage.getItem('monochrome-pocketbase-url') || '';
-            const appwriteEndpoint = localStorage.getItem('monochrome-appwrite-endpoint') || '';
-            const appwriteProject = localStorage.getItem('monochrome-appwrite-project') || '';
+            const pbUrl = localStorage.getItem('wormhole-pocketbase-url') || '';
+            const appwriteEndpoint = localStorage.getItem('wormhole-appwrite-endpoint') || '';
+            const appwriteProject = localStorage.getItem('wormhole-appwrite-project') || '';
 
             if (!pbFromEnv && customPbUrlInput) customPbUrlInput.value = pbUrl;
             if (!appwriteFromEnv) {
@@ -6701,9 +6701,9 @@ export async function initializeSettings(scrobbler, player, api, ui) {
             if (!pbFromEnv && customPbUrlInput) {
                 const pbUrl = customPbUrlInput.value.trim();
                 if (pbUrl) {
-                    localStorage.setItem('monochrome-pocketbase-url', pbUrl);
+                    localStorage.setItem('wormhole-pocketbase-url', pbUrl);
                 } else {
-                    localStorage.removeItem('monochrome-pocketbase-url');
+                    localStorage.removeItem('wormhole-pocketbase-url');
                 }
             }
 
@@ -6712,15 +6712,15 @@ export async function initializeSettings(scrobbler, player, api, ui) {
                 const project = customAppwriteProjectInput?.value.trim();
 
                 if (endpoint) {
-                    localStorage.setItem('monochrome-appwrite-endpoint', endpoint);
+                    localStorage.setItem('wormhole-appwrite-endpoint', endpoint);
                 } else {
-                    localStorage.removeItem('monochrome-appwrite-endpoint');
+                    localStorage.removeItem('wormhole-appwrite-endpoint');
                 }
 
                 if (project) {
-                    localStorage.setItem('monochrome-appwrite-project', project);
+                    localStorage.setItem('wormhole-appwrite-project', project);
                 } else {
-                    localStorage.removeItem('monochrome-appwrite-project');
+                    localStorage.removeItem('wormhole-appwrite-project');
                 }
             }
 
@@ -6730,9 +6730,9 @@ export async function initializeSettings(scrobbler, player, api, ui) {
 
         customDbResetBtn.addEventListener('click', () => {
             if (confirm('Reset custom database settings to default?')) {
-                localStorage.removeItem('monochrome-pocketbase-url');
-                localStorage.removeItem('monochrome-appwrite-endpoint');
-                localStorage.removeItem('monochrome-appwrite-project');
+                localStorage.removeItem('wormhole-pocketbase-url');
+                localStorage.removeItem('wormhole-appwrite-endpoint');
+                localStorage.removeItem('wormhole-appwrite-project');
                 alert('Settings reset. Reloading...');
                 window.location.reload();
             }

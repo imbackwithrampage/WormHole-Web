@@ -1021,10 +1021,10 @@ function applyFullscreenLyricsShadowTweaks(amLyrics, container) {
         const root = amLyrics.shadowRoot;
         if (!root) return false;
 
-        let styleEl = root.getElementById('monochrome-fullscreen-lyrics-tweaks');
+        let styleEl = root.getElementById('wormhole-fullscreen-lyrics-tweaks');
         if (!styleEl) {
             styleEl = document.createElement('style');
-            styleEl.id = 'monochrome-fullscreen-lyrics-tweaks';
+            styleEl.id = 'wormhole-fullscreen-lyrics-tweaks';
             root.appendChild(styleEl);
         }
 

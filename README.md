@@ -12,7 +12,7 @@
 
 <p align="center">
   <a href="https://w0rmh0le-web.vercel.app">Website</a> -
-  <a href="https://ko-fi.com/monochrometf">Donate</a> -
+  <a href="https://ko-fi.com/wormholetf">Donate</a> -
   <a href="#features">Features</a> -
   <a href="#usage">Usage</a> -
   <a href="#self-hosting">Self-Hosting</a> -
@@ -98,9 +98,9 @@
 
 ### Live Instance
 
-Our Recommended way to use monochrome is through our official instance:
+Our Recommended way to use wormhole is through our official instance:
 
-**[w0rmh0le-web.vercel.app](https://w0rmh0le-web.vercel.app)** / **[monochrome.samidy.com](https://monochrome.samidy.com)**
+**[w0rmh0le-web.vercel.app](https://w0rmh0le-web.vercel.app)** / **[wormhole.samidy.com](https://wormhole.samidy.com)**
 
 For alternative instances, check [INSTANCES.md](INSTANCES.md).
 
@@ -116,7 +116,7 @@ We had to heavily customize the authentication system and write several custom s
 
 ```bash
 git clone https://github.com/imbackwithrampage/WormHole-Web.git
-cd monochrome/docker
+cd wormhole/docker
 docker compose up -d
 ```
 
@@ -166,7 +166,7 @@ The current PocketBase collection schema is stored in [`database/pb_schema.json`
 
     ```bash
     git clone https://github.com/imbackwithrampage/WormHole-Web.git
-    cd monochrome
+    cd wormhole
     ```
 
 2. **Install dependencies:**

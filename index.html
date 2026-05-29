@@ -93,9 +93,9 @@
     <script>
         (() => {
             try {
-                const theme = localStorage.getItem('monochrome-theme');
+                const theme = localStorage.getItem('wormhole-theme');
                 const css = localStorage.getItem('custom_theme_css');
-                const palette = localStorage.getItem('monochrome-custom-theme');
+                const palette = localStorage.getItem('wormhole-custom-theme');
                 if (!theme) return;
 
                 document.documentElement.setAttribute('data-theme', theme);
@@ -1005,7 +1005,7 @@
             <div style="margin-bottom: 1rem">
                 <label style="display: block; margin-bottom: 0.5rem; font-size: 0.9rem">Appwrite Project ID</label>
                 <input type="text" id="custom-appwrite-project" class="template-input"
-                    placeholder="auth-for-monochrome" />
+                    placeholder="auth-for-wormhole" />
             </div>
             <div class="modal-actions">
                 <button id="custom-db-cancel" class="btn-secondary">Cancel</button>
@@ -1328,7 +1328,7 @@
             <div class="sidebar-content">
                 <div class="sidebar-logo">
                     <a href="./" class="sidebar-logo-link">
-                        <use svg="./images/monochrome-logo.svg" size="200" class="app-logo" />
+                        <use svg="./images/wormhole-logo.svg" size="200" class="app-logo" />
                         <span>WormHole</span>
                     </a>
                     <button id="sidebar-toggle" class="btn-icon desktop-only" style="margin-left: auto"
@@ -2328,7 +2328,7 @@
                             </div>
                             <div class="theme-picker" id="theme-picker">
                                 <div class="theme-option" data-theme="system">System</div>
-                                <div class="theme-option" data-theme="monochrome">Black</div>
+                                <div class="theme-option" data-theme="wormhole">Black</div>
                                 <div class="theme-option" data-theme="white">White</div>
                                 <div class="theme-option" data-theme="dark">Dark</div>
                                 <div class="theme-option" data-theme="ocean">Ocean</div>
@@ -4720,11 +4720,7 @@
                     </div>
                     <p style="text-align: center; color: grey">
                         made with ‪‪❤︎‬ by
-                        <a href="https://prigoana.com/" style="text-decoration: underline">Edideaur</a> &
-                        <a href="https://samidy.com" style="text-decoration: underline">Samidy</a>.
-                    </p>
-                    <p style="text-align: center; color: grey">
-                        We also take paid code commissions (we don't work for free)! Contact any of us for details.
+                        <a href="https://github.com/imbackwithrampage" style="text-decoration: underline">imbackwithrampage</a>.
                     </p>
                     <br />
                     <h3 style="text-align: center">Contributors List:</h3>
@@ -4807,8 +4803,8 @@
                         If WormHole has been useful to you and you're able to, consider making a donation. It
                         helps pay for the server and domain, and you get to support us :)
                     </p>
-                    <a href="https://ko-fi.com/monochrometf" target="_blank" rel="noopener noreferrer"
-                        class="btn-primary" style="
+                    <a href="https://ko-fi.com/wormholetf" target="_blank" rel="noopener noreferrer" class="btn-primary"
+                        style="
                                 text-decoration: none;
                                 display: inline-flex;
                                 align-items: center;

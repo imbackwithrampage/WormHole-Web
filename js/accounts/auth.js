@@ -1,7 +1,7 @@
 // js/accounts/auth.js
 import { AUTH_BASE_URL, authClient } from './config.js';
 
-const LEGACY_AUTH_TOKEN_KEY = 'monochrome-auth-token';
+const LEGACY_AUTH_TOKEN_KEY = 'wormhole-auth-token';
 let authToken = '';
 
 function normalizeUser(user) {

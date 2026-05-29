@@ -111,7 +111,7 @@ public class AudioPlaybackService extends Service {
             if (pm != null) {
                 wakeLock = pm.newWakeLock(
                         PowerManager.PARTIAL_WAKE_LOCK,
-                        "monochrome:audio_playback"
+                        "wormhole:audio_playback"
                 );
                 // 4-hour timeout as a safety net to prevent battery drain
                 // if the service is accidentally left running

@@ -297,7 +297,7 @@ Deployment is fully automated via **Cloudflare Pages**.
 The project uses a **relative base path** (`./`) in `vite.config.js`. This allows the same build artifact to work on both:
 
 - **Cloudflare Pages** (served from root)
-- **GitHub Pages** (served from `/monochrome/`)
+- **GitHub Pages** (served from `/wormhole/`)
 
 Hash routing is used to ensure compatibility across all hosting platforms.
 

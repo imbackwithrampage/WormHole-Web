@@ -444,8 +444,8 @@ class CommandPalette {
                 group: 'Theme',
                 icon: 'moon',
                 label: 'Theme: WormHole',
-                keywords: ['theme', 'monochrome', 'black', 'dark', 'amoled'],
-                action: () => this.setTheme('monochrome'),
+                keywords: ['theme', 'wormhole', 'black', 'dark', 'amoled'],
+                action: () => this.setTheme('wormhole'),
             },
             {
                 id: 'theme-dark',
@@ -1247,7 +1247,7 @@ class CommandPalette {
         }
 
         const { handleTrackAction } = await import('./events.js');
-        const scrobbler = window.monochromeScrobbler;
+        const scrobbler = window.wormholeScrobbler;
 
         let likedCount = 0;
         await this.notify('Liking all tracks in queue...');

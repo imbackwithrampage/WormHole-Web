@@ -18,17 +18,17 @@ jobs:
                       platform: windows
                       binary_source: WormHole-win_x64.exe
                       binary_dest: WormHole.exe
-                      archive_name: monochrome-windows.zip
+                      archive_name: wormhole-windows.zip
                     - os: ubuntu-latest
                       platform: linux
                       binary_source: WormHole-linux_x64
                       binary_dest: WormHole
-                      archive_name: monochrome-linux.zip
+                      archive_name: wormhole-linux.zip
                     - os: macos-latest
                       platform: macos
                       binary_source: WormHole-mac_universal
                       binary_dest: WormHole
-                      archive_name: monochrome-mac.zip
+                      archive_name: wormhole-mac.zip
 
         steps:
             - name: Checkout code

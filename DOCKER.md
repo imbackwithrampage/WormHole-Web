@@ -37,12 +37,12 @@ In `docker-compose.yml`, it looks like this:
 
 ```yaml
 services:
-    monochrome: # no profile -- always starts
+    wormhole: # no profile -- always starts
 
     pocketbase:
         profiles: ['pocketbase'] # opt-in
 
-    monochrome-dev:
+    wormhole-dev:
         profiles: ['dev'] # opt-in
 ```
 
@@ -85,7 +85,7 @@ services:
         ports:
             - '4000:4000'
         networks:
-            - monochrome-network
+            - wormhole-network
 ```
 
 Override files can extend existing services (add labels, env vars, networks) and define entirely new services. See the [Docker docs](https://docs.docker.com/compose/how-tos/multiple-compose-files/merge/) for the full merge behavior.
@@ -104,7 +104,7 @@ WormHole uses Appwrite for user authentication. While it defaults to official in
 2. Enable the **Google** or **Email/Password** providers in the Appwrite Console.
 3. Set these variables in your `.env`:
     - `APPWRITE_ENDPOINT`: Your Appwrite API endpoint (e.g., `https://auth.yourdomain.com/v1`).
-    - `APPWRITE_PROJECT_ID`: Your Appwrite project ID (e.g., `auth-for-monochrome`).
+    - `APPWRITE_PROJECT_ID`: Your Appwrite project ID (e.g., `auth-for-wormhole`).
 
 ### Database (PocketBase)
 

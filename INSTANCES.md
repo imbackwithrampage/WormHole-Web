@@ -14,7 +14,7 @@ The official WormHole instance maintained by the core team:
 | URL                                                       | Status   | Notes            |
 | --------------------------------------------------------- | -------- | ---------------- |
 | [w0rmh0le-web.vercel.app](https://w0rmh0le-web.vercel.app)                    | Official | Primary instance |
-| [monochrome.samidy.com](https://monochrome.samidy.com)    | Official | Secondary mirror |
+| [wormhole.samidy.com](https://wormhole.samidy.com)    | Official | Secondary mirror |
 | [lossless.wtf](https://lossless.wtf)                      | Official | Failover mirror  |
 | [if-it-runs-ship-it.lol](https://if-it-runs-ship-it.lol/) | Official | Failover mirror  |
 
@@ -22,7 +22,7 @@ The official WormHole instance maintained by the core team:
 
 ## Community Instances
 
-PLEASE do not use any rehost of monochrome and complain to us about features not working. They are usually out of date, and do not provide the latest features, and accounts are always broken.
+PLEASE do not use any rehost of wormhole and complain to us about features not working. They are usually out of date, and do not provide the latest features, and accounts are always broken.
 
 ## API Instances
 
@@ -36,7 +36,7 @@ These are available API endpoints that can be used with WormHole or other Hi-Fi 
 
 | Provider          | URL                                 | Notes                                                                                                  |
 | ----------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------ |
-| **WormHole**    | `https://monochrome-api.samidy.com` | Official API                                                                                           |
+| **WormHole**    | `https://wormhole-api.samidy.com` | Official API                                                                                           |
 |                   | `https://api.w0rmh0le-web.vercel.app`         | Official API                                                                                           |
 | **geeked.wtf**    | `https://hifi.geeked.wtf`           | Community hosted - uses the [TypeScript Rewrite](https://github.com/imbackwithrampage/hifi-api-workers) |
 | **Lucida (QQDL)** | `https://wolf.qqdl.site`            | Community hosted                                                                                       |

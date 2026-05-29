@@ -114,7 +114,7 @@ async function fetchcontributors() {
         userDIV.innerHTML = `
         <a href="https://github.com/imbackwithrampage" target="_blank">
         <img src="https://github.com/imbackwithrampage.png" alt="imbackwithrampage" width="50" height="50" style="border-radius: 50%;" loading="lazy">
-        <span>imbackwithrampage</span>
+        <span>Sunil Sachindar</span>
         <span class="contrib">Contributor</span>
         </a>
         `;
